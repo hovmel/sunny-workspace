@@ -1,0 +1,49 @@
+@import '/src/helpers/constants';
+
+.button_div {
+  padding: 15px 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: fit-content;
+  border-radius: 30px;
+  transition: all .4s;
+
+  &.disabled_button {
+    background-color: $label-color;
+    cursor: default;
+  }
+
+  &:hover:not(.disabled_button) {
+    transform: scale(1.02);
+  }
+
+  &:active:not(.disabled_button) {
+    transform: scale(0.99);
+  }
+
+  .button_icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 4px;
+  }
+
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .button_text {
+    font-family: 'Roboto-Thin', sans-serif;
+    font-size: 18px;
+  }
+
+  .disabled {
+    opacity: 0;
+  }
+}
+

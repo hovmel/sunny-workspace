@@ -1,0 +1,39 @@
+@import 'src/helpers/constants';
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, darken($main-color, 3), $dark-orange 80%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  .toolTitle {
+    font-size: 22px;
+    font-family: Roboto-Regular, sans-serif;
+  }
+
+  .profilePart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .name {
+      text-decoration: underline;
+    }
+
+    .name {
+      color: white;
+      font-family: Roboto-Medium, sans-serif;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .photo {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+    }
+  }
+}

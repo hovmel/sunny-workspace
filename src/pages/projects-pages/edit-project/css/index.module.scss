@@ -1,0 +1,78 @@
+@import 'src/helpers/constants';
+
+
+.noProjectText {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 48vh;
+}
+
+.editProjectView {
+  width: 80%;
+  margin: 14vh auto 0;
+
+  &NoUserText {
+    font-size: 20px;
+    margin: 100px 0 20px;
+  }
+
+  &Top {
+    display: flex;
+    align-items: center;
+    &Input {
+      width: 40%;
+      margin-right: 8%;
+    }
+
+    &Button {
+    }
+  }
+
+  &BottomPart {
+    margin-top: 100px;
+  }
+
+  &Text {
+    font-size: 38px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Roboto-Light, sans-serif;
+  }
+
+  &AddButton {
+    margin-bottom: 20px;
+  }
+
+  .buttonsView {
+    margin-top: 120px
+  }
+}
+
+
+.modalWrapper {
+  padding: 20px;
+  &Text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Roboto-Light, sans-serif;
+  }
+
+  &Button {
+    width: 20%;
+    margin: 40px auto 0;
+  }
+
+  &ButtonsRow {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+.line {
+  margin: 120px 0 20px;
+  height: 1px;
+  width: 50%;
+  background-color: $label-light-color;
+}

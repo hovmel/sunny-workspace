@@ -1,0 +1,56 @@
+@import '/src/helpers/constants';
+
+.button_div {
+  padding: 15px 25px;
+  background-image: linear-gradient(to right, $gradient-light , $gradient-dark);
+  background-color: $label-color;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 30px;
+  box-shadow: 0 12px 16px $yellow-glow;
+  width: fit-content;
+  transition: all .4s;
+
+  &.disabled_button {
+    background-image: unset;
+    box-shadow: 0 0 0 $yellow-glow;
+    cursor: default;
+  }
+
+  &:hover:not(.disabled_button) {
+    box-shadow: 0 16px 22px $yellow-glow;
+    transform: scale(1.02);
+  }
+
+  &:active:not(.disabled_button) {
+    box-shadow: 0 8px 12px $yellow-glow;
+    transform: scale(0.99);
+  }
+
+  .button_icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+  }
+
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .button_text {
+    font-family: 'Roboto-Light', sans-serif;
+    font-size: 18px;
+    color: white;
+  }
+
+  .disabled {
+    opacity: 0;
+  }
+}
+

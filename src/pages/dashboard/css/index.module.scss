@@ -1,0 +1,69 @@
+@import 'src/helpers/constants';
+
+.infoView {
+  padding-top: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &Text {
+    margin-bottom: 20px;
+  }
+}
+
+.infoText {
+  padding-top: 40vh;
+  text-align: center;
+}
+
+.framesWrapper {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  position: relative;
+  height: 100%;
+}
+
+.frameItem {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $main-color;
+
+  border: 0;
+
+  &Active {
+    z-index: 2;
+  }
+
+  .iframe {
+    width: 100%;
+    height: 100%;
+    background-color: $main-color;
+    border: 0;
+  }
+  .vnc {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.wholeLoading {
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh - 66px);
+  background-color: rgba(255, 250, 243, 0.69);
+  left: 0;
+  top: 66px
+}
+
+.vncLoading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 250, 243, 0.31);
+  left: 0;
+  top: 0;
+}

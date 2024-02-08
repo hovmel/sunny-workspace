@@ -1,0 +1,20 @@
+@import 'src/helpers/constants';
+
+.goBack {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  display: flex;
+  align-items: center;
+
+  &Icon {
+    margin-left: -2px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &Text {
+    font-size: 32px;
+    margin-left: 30px;
+  }
+}

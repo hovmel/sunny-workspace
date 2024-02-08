@@ -1,0 +1,144 @@
+@import 'src/helpers/constants';
+
+
+.noProjectText {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 48vh;
+}
+
+.editUsers {
+  height: calc(100% - 66px);
+}
+
+.editUsersView {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 14vh 0 0;
+
+  &NoUser {
+    padding: 0 10vh;
+  }
+
+  &NoUserText {
+    font-size: 20px;
+    margin: 100px 0 20px;
+  }
+
+  &TopInput {
+    width: 70%;
+  }
+
+  &BottomPart {
+    margin-top: 100px;
+  }
+
+  &Text {
+    font-size: 38px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Roboto-Light, sans-serif;
+  }
+
+  &Title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: Roboto-Light, sans-serif;
+  }
+
+  &AddButton {
+    margin-top: 40px;
+    width: 20%;
+
+    &Second {
+      margin-left: 5vh;
+    }
+  }
+
+  &Scroll {
+    height: calc(100% - 20px);
+    overflow-y: auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+.modalWrapper {
+  padding: 20px;
+  width: 550px;
+
+  &Text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Roboto-Light, sans-serif;
+  }
+  &SmallText {
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 28px;
+    font-family: Roboto-Light, sans-serif;
+  }
+
+  &Button {
+    margin: 40px auto 0;
+  }
+
+  &ButtonsRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &InputBlock {
+    margin-bottom: 30px;
+  }
+}
+
+.userItem {
+  display: flex;
+  cursor: default;
+  padding: 30px 30px;
+  margin: 0 20px;
+  border-bottom: 1px solid $label-light-color;
+
+  &Block {
+    width: 15%;
+    padding: 0 8px;
+
+    &Title {
+      font-size: 16px;
+      margin-bottom: 24px;
+      color: $label-color;
+      font-family: Roboto-Regular, sans-serif;
+    }
+
+    &Text {
+      overflow-x: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &Buttons {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .2s;
+
+    &First {
+      margin-right: 10px;
+    }
+  }
+
+  &:hover {
+    .userItemButtons {
+      opacity: 1;
+    }
+  }
+}

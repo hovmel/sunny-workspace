@@ -1,0 +1,51 @@
+@import 'src/helpers/constants';
+
+
+.singleTool {
+  height: calc(100% - 66px);
+}
+
+.noProjectText {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 48vh;
+}
+
+.toolWrapper {
+  padding: 94px 118px;
+}
+
+.toolTitle {
+  font-size: 26px;
+  margin-bottom: 4px;
+
+  &Small {
+    font-size: 18px;
+  }
+}
+
+.toolUsers {
+  margin: 40px 0;
+  width: 40%;
+}
+
+
+.toolSettings {
+  margin-top: 50px;
+
+  &Row {
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+    align-items: center;
+  }
+
+  &Main {
+    width: 76%;
+  }
+
+  &Title {
+    font-family: Roboto-Regular, sans-serif;
+    width: 24%;
+  }
+}

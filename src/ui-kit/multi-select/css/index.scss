@@ -1,0 +1,76 @@
+@import "src/helpers/constants";
+
+.my-multi-select {
+  &__control {
+    border: 0 !important;
+    border-radius: 10px !important;
+    background-color: $main-color !important;
+    padding: 11px 16px !important;
+    box-shadow: inset 12px 12px 12px #f0ebe4, inset -12px -12px 12px #ffffff;
+    cursor: text !important;
+
+    &--is-focused {
+      border: 0 !important;
+      outline: none !important;
+      box-shadow: inset 12px 12px 12px $input-focus-color, inset -12px -12px 12px #ffffff !important;
+    }
+
+    &--menu-is-open {
+      border: 0 !important;
+    }
+  }
+
+  &__value-container {
+    padding: 0 !important;
+    overflow: visible !important;
+
+    & div {
+      overflow: visible !important;
+    }
+  }
+
+  &__indicators {
+    display: none !important;
+  }
+
+  &__multi-value {
+    box-shadow: 5px 5px 6px #f0ebe4, -5px -5px 6px #ffffff !important;
+    background-color: $main-color !important;
+    cursor: default !important;
+    font-size: 18px !important;
+    margin: 6px 3px !important;
+
+    &__remove {
+      cursor: pointer !important;
+    }
+  }
+
+  &__menu {
+    box-shadow: 12px 12px 12px #f0ebe4, -12px -12px 12px #ffffff !important;
+    background-color: $main-color !important;
+  }
+
+  &__option {
+    cursor: pointer !important;
+    background-color: $main-color !important;
+    transition: background-color .2s;
+
+    &--is-focused {
+      background-color: darken($main-color, 4) !important;
+    }
+
+    &--is-selected {
+      background-color: lighten($dark-orange, 24) !important;
+      color: $text-color !important;
+    }
+
+    &:active {
+      background-color: darken($main-color, 10) !important;
+    }
+  }
+
+  &__placeholder {
+    color: #AAAAAA !important;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,65 @@
+@import 'src/helpers/constants';
+
+
+.register_block {
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px;
+  transform: translateY(calc(50vh - 50%));
+
+  .top_block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inputs_block {
+    width: 60%;
+  }
+
+  .register_title {
+    font-size: 26px;
+    font-family: Roboto-Thin, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  .register_input {
+    margin-bottom: 20px;
+  }
+
+  .register_icon {
+    width: 30%;
+    padding-top: 74px;
+  }
+
+  .line {
+    width: calc(100% - 8px);
+    height: 1px;
+    background-color: $label-light-color;
+    margin: 30px auto 20px;
+  }
+
+  .bottom_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom_button {
+    width: 60%;
+  }
+
+  .to_login {
+    color: $dark-orange;
+    width: 40%;
+    text-align: center;
+    font-family: Roboto-Light, sans-serif;
+    transition: color .2s;
+
+    &:active {
+      color: lighten($dark-orange, 16) !important;
+    }
+    &:hover {
+      color: lighten($dark-orange, 8);
+    }
+  }
+}

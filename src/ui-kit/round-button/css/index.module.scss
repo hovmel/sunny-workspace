@@ -1,0 +1,25 @@
+@import '/src/helpers/constants';
+
+.wrapper {
+  padding: 2px;
+  width: fit-content;
+}
+
+.inner {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $label-color;
+
+  &Active {
+    background-image: linear-gradient(to right, $gradient-light , $gradient-dark);
+  }
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
